@@ -1,0 +1,304 @@
+:root {
+    --primary-green: green;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: white;
+    width: 100%;
+}
+
+.instagram-icon,
+.whatsapp-icon,
+.call-icon,
+.mail-icon {
+    height: 20px;
+    width: 20px;
+    fill: white;
+}
+
+.facebook-icon {
+    fill: white;
+    background-color: rgb(44, 130, 44);
+    height: 25px;
+    width: 25px;  
+}
+
+.top-bar{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    background-color: rgb(44, 130, 44);
+    padding: 1rem 3rem;
+    color: white;
+    flex: 1;
+}
+
+.header-description {
+    justify-self: center;
+}
+
+.social-meadia {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-self: end;
+}
+
+.call-mail-info {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.call-num {
+    margin-right: 1rem;
+}
+
+nav {
+    padding: 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    background-color: white;
+    flex-wrap: wrap;
+}
+
+.logo-img {
+    width: 200px;
+    
+}
+
+.navigation a {
+    position: relative;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-green);
+  transition: width 0.3s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+.navigation a:hover {
+    color: var(--primary-green);
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 3rem;
+    padding: 1rem 0;
+}
+
+.arrow-right-icon {
+    height: 20px;
+    width: 20px;
+    fill: white;
+}
+
+.request-quote-btn {
+    background: #15803d;
+    color: white;
+    padding: 1rem 2.2rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.request-quote-btn:hover {
+    background: #166534;
+    transform: translateY(-3px);
+}
+
+.request-quote-btn svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.hamburger,
+.mobile-menu {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+
+    .hamburger {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .navigation,
+    .desktop-quote-btn {
+        display: none; 
+    }
+
+    .hamburger svg {
+        width: 32px;
+        height: 32px;
+    }
+
+    .mobile-menu{
+        position:fixed;
+        top:0;
+        left:-70%;
+
+        width:70%;
+        height:100vh;
+
+        background:white;
+
+        display:flex;
+        flex-direction:column;
+
+        padding:100px 30px;
+
+        overflow-y: auto;
+
+        -webkit-overflow-scrolling: touch;
+
+        transition:0.3s ease;
+
+        z-index:2000;
+    }
+
+    .mobile-menu.active{
+        left:0;
+    }
+
+    .mobile-menu a{
+        text-decoration:none;
+        color:#111;
+        font-size:1.2rem;
+        padding:15px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .close-menu{
+        position:absolute;
+        top:30px;
+        right:30px;
+
+        border:none;
+        background:none;
+
+        font-size:2rem;
+        cursor:pointer;
+    }
+
+    .mobile-quote-btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .mobile-menu-icon {
+        width: 25px;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        border-bottom: 1px solid #ddd;
+    }
+
+    .mobile-menu .menu:nth-child(3) {
+    border-top: 1px solid #ddd;
+    }
+ 
+    .top-bar {
+        display: none;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border: 1px solid grey;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-top: 2rem;
+    }
+
+    .contact h2 {
+        color: green;
+    }
+
+    .contact-div {
+        display: flex;
+        align-items: center;
+    }
+
+    .instagram-icon,
+    .whatsapp-icon,
+    .call-icon,
+    .mail-icon,
+    .location-mobile-icon{
+        fill: black;
+        height: 20px;
+        width: 20px;
+    }
+
+    .instagram-icon,
+    .whatsapp-icon,
+    .facebook-icon {
+        fill: green;
+        background-color: white;
+        
+    }
+
+    .social-meadia {
+        justify-self: start;
+    }
+
+    .follow-us {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+}

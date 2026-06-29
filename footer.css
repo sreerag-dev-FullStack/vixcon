@@ -1,0 +1,130 @@
+footer {
+    background-color: rgb(8, 48, 19);
+    padding: 1rem 4rem;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.footer-card-1,
+.footer-card-2,
+.footer-card-3,
+.footer-card-4,
+.footer-card-5{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 1rem;
+}
+
+.footer-card-1,
+.footer-card-4,
+.footer-card-5 {
+    width: 250px;
+}
+
+
+.footer-img-container img{
+    width: 100%;
+}
+
+.footer-img-container {
+    width: 150px;
+}
+
+.instagram-footer-icon,
+.whatsapp-footer-icon,
+.call-footer-icon,
+.mail-footer-icon,
+.location-footer-icon {
+    height: 20px;
+    width: 20px;
+    fill: white;
+}
+
+.facebook-footer-icon {
+    fill: white;
+    background-color: rgb(8, 48, 19);
+    height: 25px;
+    width: 25px;  
+}
+
+.quick-links a{
+    text-decoration: none;
+    color: white; 
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content a,
+.footer-content span,
+.footer-content div,
+.footer-content input,
+.footer-content button {
+    margin-bottom: 10px;
+}
+
+.subscribe-input {
+    padding: 1rem;
+    border: none;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.subscribe-input::placeholder {
+    color: white;
+}
+
+.subscribe-btn {
+    padding: 1rem 1.5rem;
+    background-color: var(--primary-green);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.footer-container h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.footer-card-5 h2 {
+    margin-bottom: 1rem;
+}
+
+.footer-end-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.footer-end-content a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-end-content p {
+    color: white;
+}
+
+hr {
+    margin: 1rem 0;
+}
+
+.footer-app-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
