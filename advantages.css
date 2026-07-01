@@ -45,25 +45,3 @@
     gap: 10px;
     margin-bottom: 2rem;
 }
-
-
-@media (max-width: 768px) {
-    .advantage-card {
-        flex-direction: row;
-        text-align: left;
-        gap: 1rem;
-    }
-    .advantages-grid {
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .advantages-section {
-        padding: 3rem 1rem;
-    }
-
-    .advantage-description {
-        width: 80%;
-    }
-    
-}
